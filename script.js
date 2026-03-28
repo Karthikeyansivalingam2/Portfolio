@@ -110,7 +110,8 @@ class Particle {
 
 function init() {
     particles = [];
-    let numberOfParticles = (canvas.width * canvas.height) / 9000;
+    let density = window.innerWidth <= 768 ? 15000 : 9000;
+    let numberOfParticles = (canvas.width * canvas.height) / density;
     for (let i = 0; i < numberOfParticles; i++) {
         let size = Math.random() * 2 + 1;
         let x = Math.random() * (innerWidth - size * 2);
@@ -173,6 +174,30 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const navItems = document.querySelectorAll('.nav-links li a');
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.querySelector('i').classList.toggle('fa-bars');
+        menuToggle.querySelector('i').classList.toggle('fa-times');
+    });
+}
+
+// Close menu when a link is clicked
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        if (menuToggle) {
+            menuToggle.querySelector('i').classList.add('fa-bars');
+            menuToggle.querySelector('i').classList.remove('fa-times');
+        }
+    });
+});
+
 // Custom Cursor & Spider Pet Follow
 let mouseX = window.innerWidth / 2;
 let mouseY = window.innerHeight / 2;
@@ -180,6 +205,8 @@ let spiderX = window.innerWidth / 2;
 let spiderY = window.innerHeight / 2;
 
 window.addEventListener('mousemove', (e) => {
+    if (window.innerWidth <= 768) return;
+
     mouseX = e.clientX;
     mouseY = e.clientY;
     
@@ -200,6 +227,9 @@ window.addEventListener('mousemove', (e) => {
 
 // Spider Pet Animation (follows cursor with delay)
 function animateSpider() {
+    // Skip animation on mobile for performance and because they are hidden
+    if (window.innerWidth <= 768) return;
+
     let dx = mouseX - spiderX;
     let dy = mouseY - spiderY;
     
