@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthikeyan | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="spider-pet" id="spiderPet">🕷️</div>
+    <canvas id="webCanvas"></canvas>
+
+    <nav id="navbar">
+        <div class="logo">Karthikeyan<i class="fas fa-spider logo-icon"></i></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <section id="home" class="hero section-hidden">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="neon-text-red spider-glitch" data-text="Karthikeyan">Karthikeyan</span></h1>
+            <h2 class="typing-container">I'm a <span id="typingText" class="neon-text-blue"></span><span class="typing-cursor">|</span></h2>
+            <div class="hero-btns">
+                <a href="#projects" class="btn">Enter My Universe</a>
+                <a href="Karthikeyan_Resume.pdf" download class="btn outline-blue">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section-hidden">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-card glow-card-blue">
+                <p>Hello! I am Karthikeyan, a versatile Full Stack Developer weaving the digital web of the future. With mastery over both high-performance back-end systems and stunning front-end aesthetics, I craft complete, responsive, and innovative applications. Like Spider-Man navigating the city, I swing through complex full-stack challenges with agility and precision. I believe that with great power comes great responsibility, and I use the MERN stack to build impactful, scalable solutions for the modern world.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills section-hidden">
+        <div class="container">
+            <h2 class="section-title">My Tech Stack</h2>
+            <div class="skills-grid-new">
+                <!-- Frontend -->
+                <div class="skill-card glow-card-red" data-aos="zoom-in">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Building the foundation</p>
+                </div>
+                <div class="skill-card glow-card-blue">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Adding life with logic</p>
+                </div>
+                <div class="skill-card glow-card-red">
+                    <i class="fab fa-react"></i>
+                    <h3>React.js</h3>
+                    <p>Modern UI components</p>
+                </div>
+                <!-- Backend -->
+                <div class="skill-card glow-card-blue">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node & Express</h3>
+                    <p>Scalable server-side</p>
+                </div>
+                <div class="skill-card glow-card-red">
+                    <i class="fas fa-database"></i>
+                    <h3>MongoDB</h3>
+                    <p>Flexible NoSQL data</p>
+                </div>
+                <div class="skill-card glow-card-blue">
+                    <i class="fas fa-server"></i>
+                    <h3>SQL / MySQL</h3>
+                    <p>Structured data management</p>
+                </div>
+                <!-- Tools -->
+                <div class="skill-card glow-card-blue">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section-hidden">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Foodie -->
+                <div class="project-card glow-card-red">
+                    <div class="project-img">
+                        <div class="img-placeholder"><i class="fas fa-utensils"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Foodie Order System</h3>
+                        <p>A smart food ordering and management system for streamlined college campus dining.</p>
+                        <div class="project-links">
+                            <a href="https://foodiezone-sxs291c8c-karthikeyans-projects-62094765.vercel.app" target="_blank" class="btn-small"><i class="fas fa-eye"></i> Live</a>
+                            <a href="https://github.com/Karthikeyansivalingam2/Foodie" target="_blank" class="btn-small outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2: Shoes Mart -->
+                <div class="project-card glow-card-blue">
+                    <div class="project-img">
+                        <div class="img-placeholder"><i class="fas fa-shoe-prints"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Shoes Mart E-commerce</h3>
+                        <p>A premium footwear shop with dynamic catalogs, smooth search, and secure checkout flows.</p>
+                        <div class="project-links">
+                            <a href="https://foot-wear-5lz6-bodlw0frv-karthikeyans-projects-62094765.vercel.app" target="_blank" class="btn-small"><i class="fas fa-eye"></i> Live</a>
+                            <a href="https://github.com/Karthikeyansivalingam2/shoesmart" target="_blank" class="btn-small outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3: Bulk Mail Sender -->
+                <div class="project-card glow-card-red">
+                    <div class="project-img">
+                        <div class="img-placeholder"><i class="fas fa-paper-plane"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Bulk Mail Sender</h3>
+                        <p>An efficient full-stack application to send bulk emails with intuitive templates and tracking.</p>
+                        <div class="project-links">
+                            <a href="https://bulk-mail-app-rdfa.vercel.app/" target="_blank" class="btn-small"><i class="fas fa-eye"></i> Live</a>
+                            <a href="https://github.com/Karthikeyansivalingam2/Bulk-Mail-App" target="_blank" class="btn-small outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4: Weather API App -->
+                <div class="project-card glow-card-blue">
+                    <div class="project-img">
+                        <div class="img-placeholder"><i class="fas fa-cloud-sun"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather API App</h3>
+                        <p>Real-time weather tracking application providing instant atmospheric updates for any city.</p>
+                        <div class="project-links">
+                            <a href="https://weather-lhz4umg9m-karthikeyans-projects-62094765.vercel.app" target="_blank" class="btn-small"><i class="fas fa-eye"></i> Live</a>
+                            <a href="https://github.com/Karthikeyansivalingam2/Weather-App" target="_blank" class="btn-small outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section-hidden">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form glow-card-blue">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/Karthikeyansivalingam2" target="_blank" class="glow-icon-red"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/karthikeyanfsd/" target="_blank" class="glow-icon-blue"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/karthikeyan._s_/" target="_blank" class="glow-icon-blue"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2026 Karthikeyan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
