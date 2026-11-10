@@ -1,32 +1,44 @@
-# 🕷️ Karthikeyan's Multiverse Portfolio
+# Karthikeyan — Developer Portfolio
 
-Welcome to my personal portfolio! I am a passionate **Full Stack Developer** student weaving the digital web of the future. This project is a "Spider-Verse" themed portfolio designed to showcase my skills, projects, and creative coding journey.
+A personal portfolio website showcasing my web development skills, selected projects, and learning journey. The design follows a Spider-Verse-inspired visual direction.
 
-## 🚀 About Me
-I am **Karthikeyan**, a versatile developer focusing on the **MERN Stack**. I love combining high-performance backend logic with stunning frontend aesthetics. Like Spider-Man navigating the city, I'm always swinging through new challenges and learning new technologies to build impactful digital solutions.
+## About
+I'm Karthikeyan, a developer interested in building responsive web applications and full-stack projects. I enjoy combining frontend design with practical backend functionality while continuously learning new tools.
 
-## 🛠️ My Tech Stack
-- **Frontend**: HTML5, CSS3 (Glassmorphism), JavaScript (ES6+), React.js
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB, MySQL
-- **Tools**: Git, GitHub, Vercel
+## Skills & Technologies
+- **Frontend:** HTML5, CSS3, JavaScript, React
+- **Backend:** Node.js, Express.js
+- **Databases:** MongoDB, MySQL
+- **Tools & Platforms:** Git, GitHub, VS Code, Vercel
 
-## 📂 Featured Projects
-- **Foodie Order System**: A smart food ordering and management system for college campus dining.
-- **Shoes Mart E-commerce**: A premium footwear shop with dynamic catalogs and secure checkout.
-- **Bulk Mail Sender**: An efficient application to send mass emails with customized templates.
-- **Weather API App**: Real-time weather tracking providing instant atmospheric updates.
+## Featured Projects
+- **Foodiee:** Online food ordering and restaurant management system.
+- **ShoeSmart:** Footwear e-commerce application with product management and checkout.
+- **Bulk Mail Dispatcher:** Bulk email application with spreadsheet import and history tracking.
+- **Weather App:** Weather application for viewing current weather information.
 
-## 🕸️ Key Features
-- **Spider-Man Theme**: Interactive spider-web background and custom "crawling spider" cursor.
-- **Responsive Design**: Fully optimized for all screen sizes.
-- **Neon Glitch Effects**: Stylized animations inspired by the *Into the Spider-Verse* aesthetic.
-- **Glassmorphism UI**: High-end blur and reflective card designs.
+Explore more on my [GitHub profile](https://github.com/Karthikeyansivalingam2).
 
-## 📬 Connect with Me
-- **LinkedIn**: [karthikeyanfsd](https://www.linkedin.com/in/karthikeyanfsd/)
-- **Instagram**: [karthikeyan._s_](https://www.instagram.com/karthikeyan._s_/)
-- **GitHub**: [Karthikeyansivalingam2](https://github.com/Karthikeyansivalingam2)
+## Portfolio Design
+- Spider-Verse-inspired visual theme
+- Responsive layout for desktop and mobile
+- Animated visual elements and glassmorphism-inspired styling
+- Dedicated sections for skills and projects
+
+## Run Locally
+
+```bash
+git clone https://github.com/Karthikeyansivalingam2/Portfolio.git
+cd Portfolio
+npm install
+```
+
+Run the development command configured in `package.json` and open the local URL shown in your terminal.
+
+## Connect
+- **GitHub:** [Karthikeyansivalingam2](https://github.com/Karthikeyansivalingam2)
+- **LinkedIn:** [karthikeyanfsd](https://www.linkedin.com/in/karthikeyanfsd/)
+- **Instagram:** [karthikeyan._s_](https://www.instagram.com/karthikeyan._s_/)
 
 ---
-*"With great power comes great responsibility... and great code!"*
+Thanks for visiting my portfolio!
